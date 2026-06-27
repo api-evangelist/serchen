@@ -2,14 +2,11 @@
   "repo": "serchen",
   "feeds": [
     {
-      "source": "https://serchen.com/blog/",
-      "error": "HTTPError"
-    },
-    {
       "source": "https://blog.serchen.com/",
-      "error": "HTTPError"
+      "saved": 0,
+      "error": "HTTP 403 Forbidden (redirects to www.serchen.com/blog/)"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 10,
+  "fetched": "2026-06-27T13:09:16Z"
 }
