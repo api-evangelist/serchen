@@ -3,10 +3,12 @@
   "feeds": [
     {
       "source": "https://blog.serchen.com/",
+      "feed_url": "https://blog.serchen.com/",
+      "title": "",
       "saved": 0,
-      "error": "HTTP 403 Forbidden (redirects to www.serchen.com/blog/)"
+      "method": "none"
     }
   ],
   "post_count": 10,
-  "fetched": "2026-06-27T13:09:16Z"
+  "fetched": "2026-07-11T11:50:51Z"
 }
