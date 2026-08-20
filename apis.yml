@@ -6,6 +6,10 @@ name: Serchen
 tags:
   - Cloud Services
   - Directory
+  - Software-as-a-Service
+tags_raw:
+  - Cloud Services
+  - Directory
   - SaaS
 type: Index
 accessModel:
