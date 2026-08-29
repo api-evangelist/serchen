@@ -1,0 +1,81 @@
+generated: '2026-08-29'
+method: searched
+source: https://www.serchen.com/blog/serchen-basic-vs-premium-membership
+docs:
+  - https://www.serchen.com/get-listed
+  - https://www.serchen.com/marketing
+  - https://www.serchen.com/blog/serchen-basic-vs-premium-membership
+note: >-
+  Serchen sells vendor VISIBILITY on its software marketplace, not API access — there
+  is no developer plan because there is no public API. Three levels of vendor presence
+  are published by name and feature set; NO price is published anywhere on serchen.com
+  for any of them, and there is no dedicated /pricing page. Prices circulating on
+  third-party listing-service sites were deliberately NOT recorded here because they
+  are not provider-published.
+currency: null
+billing_period: null
+plan_count: 3
+plans:
+  - name: Free listing
+    price: null
+    price_published: false
+    billing_period: null
+    included:
+      - Company name, logo, description on one hub page and one software category
+      - Customer reviews can be received on the profile
+    limits:
+      - No product feature list
+      - No product screenshots
+      - No Visit website button on the profile or category listing
+      - No placement on competitor profiles or related blog posts
+      - Competitor recommendations cannot be removed from the profile
+      - No bulk upload of reviews collected on other platforms
+  - name: Basic Membership
+    price: null
+    price_published: false
+    billing_period: null
+    included:
+      - Everything in the free listing
+      - Product feature list
+      - Product screenshots
+      - Visit website button on the company profile
+      - AI-generated Review Summary consolidating recurring review themes
+    limits:
+      - Standard category listing position
+      - No Visit website button on the category listing
+      - No placement on competitor profiles or related blog posts
+      - No bulk review upload
+      - Competitor recommendations remain visible on the profile
+  - name: Premium Membership
+    price: null
+    price_published: false
+    billing_period: null
+    included:
+      - Everything in Basic Membership
+      - Placement above Basic and Free listings in standard category ordering
+      - Visit website button directly on the primary category listing
+      - Placement on relevant competitor profile pages
+      - Placement in related Serchen blog posts
+      - Bulk upload of reviews collected on G2, Capterra, Trustpilot and similar
+      - Competitor recommendations removed from the profile
+    limits: []
+add_ons:
+  - name: Serchen Daily newsletter — Featured App placement / Newsletter Sponsorship
+    price: null
+    source: https://www.serchen.com/blog/serchen-newsletter-beginners-guide
+    note: Reaches a stated 55,000+ business leaders; no price published.
+  - name: Serchen Spotlights
+    price: null
+    source: https://www.serchen.com/blog/how-to-spotlight-your-brand-on-serchen
+    note: Places a brand above category listings; no price published.
+  - name: Guest posts
+    price: null
+    source: https://www.serchen.com/blog/guide-to-serchen-guest-posts
+    note: No price published.
+evidence:
+  - url: https://www.serchen.com/get-listed
+    status: 200
+  - url: https://www.serchen.com/blog/serchen-basic-vs-premium-membership
+    status: 200
+  - url: https://www.serchen.com/marketing
+    status: 200

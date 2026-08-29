@@ -1,0 +1,26 @@
+generated: '2026-08-29'
+method: searched
+source: https://www.serchen.com/robots.txt
+note: >-
+  Serchen publishes no public API, so there is no rate-limit surface to document. No
+  developer portal, API reference, or machine-readable contract was found on any
+  Serchen host (see x-coverage in apis.yml). The only access-control signal the
+  provider publishes for machines is robots.txt, which disallows /api/, /admin/ and
+  /r/ and blocks nine named AI crawlers outright. NO RateLimits pointer is wired into
+  apis.yml, because an honest zero must not be scored as a published limit.
+limit_count: 0
+limits: []
+headers: []
+exhaustion_status_code: null
+crawler_controls:
+  robots_txt: https://www.serchen.com/robots.txt
+  disallowed_paths:
+    - /admin/
+    - /api/
+    - /r/
+  named_agents_blocked: 9
+evidence:
+  - url: https://www.serchen.com/robots.txt
+    status: 200
+  - url: https://www.serchen.com/openapi.json
+    status: 404

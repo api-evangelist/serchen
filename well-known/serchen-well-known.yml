@@ -1,0 +1,84 @@
+generated: '2026-08-29'
+method: probed
+source: live HTTPS probes of the Serchen hosts named in apis.yml
+note: >-
+  Every /.well-known/ path probed on www.serchen.com returned HTTP 404 from the
+  Next.js application (a real 404 route, not an SPA 200 shell), so NO WellKnown or
+  SecurityTxt pointer is emitted for this provider. The one machine-readable
+  consent document Serchen does serve is /robots.txt, which carries Cloudflare
+  Content-Signal directives and an explicit AI-crawler block list; it is saved
+  verbatim alongside this index.
+hosts:
+  - host: www.serchen.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /robots.txt
+        status: 200
+        file: serchen-robots.txt
+  - host: blog.serchen.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+  - host: newsletter.serchen.com
+    documents:
+      - path: /llms.txt
+        status: 200
+        file: null
+        note: >-
+          Returned HTTP 200 but the body is the newsletter platform's HTML
+          application shell, not an llms.txt document. Recorded as a miss.
+content_signal:
+  served: true
+  document: /robots.txt
+  file: serchen-robots.txt
+  fetched: '2026-08-29'
+  http_status: 200
+  signals:
+    - directive: 'Content-Signal: search=yes,ai-train=no,use=reference'
+      applies_to: 'User-agent: *'
+  ai_crawlers_disallowed:
+    - Amazonbot
+    - Applebot-Extended
+    - Bytespider
+    - CCBot
+    - ClaudeBot
+    - CloudflareBrowserRenderingCrawler
+    - Google-Extended
+    - GPTBot
+    - meta-externalagent
+  provenance_note: >-
+    The Content-Signal block is delimited in the file by "# BEGIN Cloudflare Managed
+    content" / "# END Cloudflare Managed Content", i.e. it is emitted by Cloudflare's
+    managed robots.txt feature that Serchen enabled on its own zone rather than being
+    hand-authored. It is served from the provider's own host and is a deliberate
+    configuration choice, so it is recorded as a real consent signal with this
+    provenance stated.
+  observed_tension: >-
+    Serchen's own /get-listed page markets listings as boosting "AI discovery inside
+    Google, ChatGPT, Perplexity, Gemini" while this robots.txt disallows GPTBot,
+    Google-Extended, ClaudeBot and meta-externalagent and sets ai-train=no.
+  disallowed_paths:
+    - /admin/
+    - /api/
+    - /r/

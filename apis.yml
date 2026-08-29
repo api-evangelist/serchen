@@ -1,17 +1,88 @@
 aid: serchen
-url: 
-  https://raw.githubusercontent.com/api-evangelist/serchen/refs/heads/main/apis.yml
-apis: []
+url: https://raw.githubusercontent.com/api-evangelist/serchen/refs/heads/main/apis.yml
 name: Serchen
+description: 'Serchen is a business-software marketplace and buyer review platform operated by Ketchell
+  Ltd of Bournemouth, United Kingdom, trading as Serchen since 1997. It lists software products and IT
+  service providers across hundreds of categories and industry hubs, collects and moderates first-hand
+  buyer reviews, generates AI review summaries, and lets buyers compare products side by side. Vendors
+  claim a free listing and can pay for Basic or Premium Membership, newsletter placement in Serchen Daily,
+  category spotlights and guest posts. Serchen is a discovery and demand surface rather than a software
+  vendor: it publishes no public API, SDK, webhook surface or developer portal, and its only machine-readable
+  artifacts are a sitemap index and a robots.txt carrying Cloudflare Content-Signal directives.'
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/serchen.png
 tags:
-  - Cloud Services
-  - Directory
-  - Software-as-a-Service
+- Cloud Services
+- Directory
+- Software-as-a-Service
+- Software Marketplace
+- Reviews
+- Business Software
+- Vendor Discovery
+- Comparison
+- Lead Generation
 tags_raw:
-  - Cloud Services
-  - Directory
-  - SaaS
+- Cloud Services
+- Directory
+- SaaS
+- Software Marketplace
+- Reviews
+- Business Software
+- Vendor Discovery
+- Comparison
+- Lead Generation
 type: Index
+access: 3rd-Party
+apis: []
+common:
+- url: https://www.serchen.com/
+  name: Serchen Website
+  type: Website
+- url: https://www.serchen.com/get-listed
+  name: Get Listed
+  type: GettingStarted
+- url: https://www.serchen.com/login
+  name: Sign in
+  type: Login
+- url: https://www.serchen.com/blog
+  name: Serchen Blog
+  type: Blog
+- url: https://www.serchen.com/terms
+  name: Terms of Use
+  type: TermsOfService
+- url: https://www.serchen.com/terms
+  name: Privacy Policy (the site footer Privacy link resolves to Terms of Use; Serchen serves no separate
+    privacy page)
+  type: PrivacyPolicy
+- url: https://www.serchen.com/contact
+  name: Contact Serchen
+  type: Contact
+- url: https://www.serchen.com/contact
+  name: Contact Serchen
+  type: Support
+- url: https://newsletter.serchen.com/
+  name: Serchen Daily newsletter
+  type: Newsletter
+- url: https://x.com/serchen
+  name: Serchen on X
+  type: X
+- url: https://uk.linkedin.com/company/serchen
+  name: Serchen on LinkedIn
+  type: LinkedIn
+- url: plans/serchen-plans-pricing.yml
+  name: Serchen vendor membership tiers
+  type: Plans
+- url: llms/serchen-llms.txt
+  name: Serchen llms.txt (generated)
+  type: LLMsTxt
+- url: well-known/serchen-robots.txt
+  name: Content-Signal directives in robots.txt
+  type: ContentSignal
+- url: security/serchen-domain-security.yml
+  name: Domain security posture
+  type: DomainSecurity
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
 deliveryModel:
   model: saas
   open_source: false
@@ -34,39 +105,34 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/serchen.png
-  https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-access: 3rd-Party
-common:
-  - type: DomainSecurity
-    url: security/serchen-domain-security.yml
-  - url: https://www.serchen.com/
-    name: Serchen Website
-    type: Website
-  - url: https://www.serchen.com/get-listed/
-    name: Get Listed
-    type: GettingStarted
-  - url: https://www.serchen.com/login.aspx
-    name: Login
-    type: Login
-  - url: https://blog.serchen.com/
-    name: Serchen Blog
-    type: Blog
-  - url: https://www.serchen.com/legal/
-    name: Privacy Policy
-    type: PrivacyPolicy
-  - url: https://blog.serchen.com/contact/
-    name: Contact
-    type: Contact
-  - url: https://x.com/serchen
-    name: Serchen on X
-    type: X
-  - url: https://uk.linkedin.com/company/serchen
-    name: Serchen on LinkedIn
-    type: LinkedIn
 created: '2026-03-24'
-modified: '2026-03-24'
+modified: '2026-08-29'
 specificationVersion: '0.23'
-description: >-
-  Serchen is a cloud services marketplace and review platform that helps businesses
-  discover, review, and connect with cloud and SaaS providers.
+x-enrichment:
+  date: '2026-08-29'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: 'Serchen is a software-listing marketplace with no developer surface at all: the site navigation
+    and sitemap index carry no /developers or /api page, every OpenAPI, GraphQL, llms.txt and /.well-known/
+    path 404s on www.serchen.com, and robots.txt disallows /api/ because it is a Next.js internal route
+    prefix rather than a published API.'
+  evidence:
+  - url: https://www.serchen.com/openapi.json
+    status: 404
+  - url: https://www.serchen.com/graphql
+    status: 404
+  - url: https://www.serchen.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.serchen.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.serchen.com/llms.txt
+    status: 404
+  - url: https://www.serchen.com/sitemap.xml
+    status: 200
+  - url: https://www.serchen.com/robots.txt
+    status: 200
+  checked: '2026-08-29'
