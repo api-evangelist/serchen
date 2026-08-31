@@ -7,8 +7,15 @@
       "title": "",
       "saved": 0,
       "method": "none"
+    },
+    {
+      "source": "https://www.serchen.com/blog",
+      "feed_url": "https://www.serchen.com/blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
   "post_count": 10,
-  "fetched": "2026-08-22T20:20:02Z"
+  "fetched": "2026-08-30T22:33:40Z"
 }
