@@ -34,6 +34,8 @@ type: Index
 access: 3rd-Party
 apis: []
 common:
+- type: RateLimits
+  url: rate-limits/serchen-rate-limits.yml
 - type: Pricing
   url: https://www.serchen.com/blog/serchen-basic-vs-premium-membership
 - url: https://www.serchen.com/
