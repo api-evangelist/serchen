@@ -64,36 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Serchen (https://www.serchen.com/) is a cloud services directory and comparison platform that helps businesses discover, evaluate, and compare software products and IT service providers. Founded in 1997 and headquartered in London, England, Serchen has grown into one of the world's top software marketplaces, listing over 35,000 software products and services across 500+ categories. The platform combines community-driven ratings and reviews with detailed vendor profiles to help buyers make informed purchasing decisions.
+Serchen is a business-software marketplace and buyer review platform operated by Ketchell Ltd of Bournemouth, United Kingdom, trading as Serchen since 1997. It lists software products and IT service providers across hundreds of categories and industry hubs, collects and moderates first-hand buyer reviews, generates AI review summaries, and lets buyers compare products side by side. Vendors claim a free listing and can pay for Basic or Premium Membership, newsletter placement in Serchen Daily, category spotlights and guest posts. Serchen is a discovery and demand surface rather than a software vendor: it publishes no public API, SDK, webhook surface or developer portal, and its only machine-readable artifacts are a sitemap index and a robots.txt carrying Cloudflare Content-Signal directives.
 
-## Overview
+**Areas:** Cloud Services · Directory · Software-as-a-Service · Software Marketplace · Reviews · Business Software · Vendor Discovery · Comparison · Lead Generation
 
-Serchen focuses specifically on cloud services and SaaS products, positioning itself as the go-to destination for cloud service buyers. Vendors can submit their products through the "Get Listed" program, and buyers can browse categories ranging from cloud hosting and cloud computing to CRM, ERP, cybersecurity, and hundreds of other business technology solutions. User reviews are central to the platform, giving buyers trusted, real-world feedback alongside structured product data.
+## Serchen on APIs.io
 
-## Key Features
+Everything profiled for Serchen is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/serchen/](https://apis.io/providers/serchen/)** — or go straight to one of the APIs or properties below.
 
-- Directory of 35,000+ software products and SaaS providers across 500+ categories
-- Community-driven ratings and reviews from verified users
-- Cloud services focus covering cloud hosting, computing, API management, and more
-- Vendor listing and profile management via the Get Listed program
-- Comparison tools to evaluate competing products side by side
-- Blog with buying guides, software reviews, and industry advice
+### Published properties
 
-## Common Properties
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Property | URL |
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Serchen Domain Security](https://apis.io/security/serchen/serchen-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Serchen Plans Pricing](https://apis.io/plans/serchen/serchen-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Serchen Rate Limits](https://apis.io/rate-limits/serchen/serchen-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.serchen.com/)
+- [Getting started](https://www.serchen.com/get-listed)
+- [Pricing](https://www.serchen.com/blog/serchen-basic-vs-premium-membership)
+- [Support](https://www.serchen.com/contact)
+- [Blog](https://www.serchen.com/blog)
+- [Terms of service](https://www.serchen.com/terms)
+- [Privacy policy](https://www.serchen.com/terms)
+
+## API Evangelist rating
+
+**Kin Score 24.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Website | https://www.serchen.com/ |
-| Get Listed | https://www.serchen.com/get-listed/ |
-| Login | https://www.serchen.com/login.aspx |
-| Blog | https://blog.serchen.com/ |
-| Privacy Policy | https://www.serchen.com/legal/ |
-| Contact | https://blog.serchen.com/contact/ |
-| X (Twitter) | https://x.com/serchen |
-| LinkedIn | https://uk.linkedin.com/company/serchen |
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 76.3 |
 
-## Tags
+**Agent readiness 4.7** — human-only
 
-- Cloud Services
-- Directory
-- SaaS
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | yes |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/serchen/](https://apis.io/providers/serchen/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Serchen: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/serchen/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
